@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_19_225010) do
+ActiveRecord::Schema.define(version: 2022_02_19_231727) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2022_02_19_225010) do
     t.string "invite_code", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "owner_id", null: false
     t.index ["invite_code"], name: "index_channels_on_invite_code", unique: true
     t.index ["name"], name: "index_channels_on_name"
   end

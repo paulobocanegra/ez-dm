@@ -7,6 +7,7 @@
 #  invite_code :string           not null
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
+#  owner_id    :string           not null
 #
 class Channel < ApplicationRecord
     after_initialize :generate_invite_code
