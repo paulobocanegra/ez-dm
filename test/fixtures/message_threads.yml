@@ -1,13 +1,13 @@
 # == Schema Information
 #
-# Table name: channels
+# Table name: message_threads
 #
-#  id          :bigint           not null, primary key
-#  name        :string           not null
-#  invite_code :string           not null
-#  created_at  :datetime         not null
-#  updated_at  :datetime         not null
-#  owner_id    :integer          not null
+#  id         :bigint           not null, primary key
+#  title      :string           not null
+#  channel_id :integer
+#  is_thread  :boolean          default(FALSE), not null
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
 #
 
 # This model initially had no columns defined. If you add columns to the
